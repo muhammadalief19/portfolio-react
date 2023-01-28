@@ -1,7 +1,7 @@
 function Welcome() {
   return (
     <>
-      <div className="w-full h-screen lg:overflow-hidden bg-gray-700 text-slate-200">
+      <div className="w-full h-screen overflow-hidden bg-gray-700 text-slate-200">
         <SectionHero />
       </div>
     </>
@@ -20,7 +20,7 @@ const SectionHero = () => {
       <p className="absolute text-lg md:text-xl lg:text-3xl lg:top-32  top-24 md:left-16 font-bold">
         Web Developer
       </p>
-      <div className="w-[80%] md:w-1/2 lg:w-[40%] aspect-square bg-gradient-to-br from-sky-600 via-sky-400 to-sky-200 absolute rounded-full shadow-lg shadow-slate-100 animate-up&down bottom-16 md:bottom-10"></div>
+      <div className="w-[80%] md:w-1/2 lg:w-[40%] aspect-square bg-gradient-to-br from-sky-600 via-sky-400 to-sky-200 absolute rounded-full shadow-lg shadow-slate-100 animate-up&down bottom-16 md:bottom-10 lg:bottom-4"></div>
       <div className="w-full lg:w-[90%] h-full flex justify-center items-end">
         <img src="img/hero-image-1.png" alt="" className="md:h-[90%] z-10" />
       </div>
