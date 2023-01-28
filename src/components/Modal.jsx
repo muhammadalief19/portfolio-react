@@ -5,10 +5,12 @@ function Modal(props) {
 
   function showModal() {
     setModalActive(true);
+    document.body.style.overflow = "hidden";
   }
 
   function clearModal() {
     setModalActive(false);
+    document.body.style.overflow = "auto";
   }
   return (
     <>
