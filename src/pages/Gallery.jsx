@@ -10,7 +10,7 @@ function Gallery() {
   }
   return (
     <>
-      <div className="w-full text-slate-200">
+      <div className="w-full text-slate-200 overflow-x-hidden">
         <Header nama={"Gallery"} />
         <section className="w-full py-20 flex flex-col items-center gap-6 over">
           <div className="w-3/4 flex justify-end">
