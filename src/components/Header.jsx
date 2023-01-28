@@ -20,7 +20,7 @@ function Header(props) {
   return (
     <>
       <nav
-        className="fixed z-[99999] h-max top-0 w-full px-10 py-7 grid grid-cols-2 lg:grid-cols-4"
+        className="fixed z-[99999] h-20 top-0 w-full px-10 grid grid-cols-2 lg:grid-cols-4 items-center"
         id="header"
       >
         <div className="w-full">
