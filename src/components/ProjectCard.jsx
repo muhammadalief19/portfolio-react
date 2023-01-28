@@ -5,12 +5,10 @@ export default function ProjectCard(props) {
 
   function showCard() {
     seCardActive(true);
-    document.body.style.overflow = "hidden";
   }
 
   function clearCard() {
     seCardActive(false);
-    document.body.style.overflow = "auto";
   }
   return (
     <>
@@ -44,7 +42,7 @@ export default function ProjectCard(props) {
       <div
         className={` ${
           cardActive ? "flex" : "hidden"
-        } fixed w-full h-screen bg-slate-100 bg-opacity-60 backdrop-blur justify-center items-center z-50 top-0 left-0`}
+        } fixed w-full h-screen bg-slate-100 bg-opacity-60 backdrop-blur justify-center items-center z-[60] top-0 left-0`}
       >
         <span
           className="absolute top-9 right-10 scale-150 cursor-pointer"

@@ -22,7 +22,7 @@ function Projects() {
   }, [projects]);
   return (
     <>
-      <div className="w-full text-slate-200">
+      <div className="w-full text-slate-200 overflow-x-hidden">
         <Header nama={"Projects"} />
         <section className="w-full py-24 flex flex-col items-center gap-10 relative">
           <img
