@@ -10,7 +10,7 @@ export default function ProjectCard(props) {
 
   function clearCard() {
     seCardActive(false);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = "auto";
   }
   return (
     <>
