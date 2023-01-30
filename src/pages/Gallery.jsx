@@ -3,6 +3,7 @@ import Header from "../components/Header";
 
 function Gallery() {
   const [effect, setEffect] = useState(false);
+  const imgUrl = process.env.REACT_APP_URLIMAGE;
 
   function effectActive() {
     setEffect((effect) => !effect);
@@ -51,7 +52,7 @@ function Gallery() {
           <div className="w-[95%] md:w-[90%] lg:w-3/4 grid grid-cols-2 lg:grid-cols-4 lg:grid-flow-row rounded gap-2">
             <div className="w-full col-start-1 lg:col-span-2 lg:row-span-2">
               <img
-                src="img/img-gallery-1.jpg"
+                src={`${imgUrl}/img-gallery-1.webp`}
                 alt=""
                 className={`inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
@@ -62,7 +63,7 @@ function Gallery() {
             </div>
             <div className="w-full col-start-2 lg:col-start-3 lg:row-start-1">
               <img
-                src="img/img-gallery-2.jpg"
+                src={`${imgUrl}/img-gallery-2.webp`}
                 alt=""
                 className={`inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
@@ -73,7 +74,7 @@ function Gallery() {
             </div>
             <div className="w-full col-start-1 row-start-2 lg:row-start-2 lg:col-start-3">
               <img
-                src="img/img-gallery-3.jpg"
+                src={`${imgUrl}/img-gallery-3.webp`}
                 alt=""
                 className={`inset-0 w-full h-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
@@ -84,7 +85,7 @@ function Gallery() {
             </div>
             <div className="row-start-3 col-span-2 lg:col-span-4 lg:row-start-3">
               <img
-                src="img/img-gallery-6.jpg"
+                src={`${imgUrl}/img-gallery-6.webp`}
                 alt=""
                 className={`inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
@@ -95,7 +96,7 @@ function Gallery() {
             </div>
             <div className="row-start-4 lg:col-span-2 lg:row-start-4 lg:col-start-1">
               <img
-                src="img/img-gallery-4.jpg"
+                src={`${imgUrl}/img-gallery-4.webp`}
                 alt=""
                 className={`inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
@@ -106,7 +107,7 @@ function Gallery() {
             </div>
             <div className="row-start-4 lg:col-span-2 lg:row-start-4 lg;col-start-3">
               <img
-                src="img/img-gallery-5.jpg"
+                src={`${imgUrl}/img-gallery-5.webp`}
                 alt=""
                 className={`inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
@@ -117,7 +118,7 @@ function Gallery() {
             </div>
             <div className="col-start-2 row-start-2 lg:col-start-4 lg:col-span-2 lg:row-start-2 ">
               <img
-                src="img/img-gallery-8.jpg"
+                src={`${imgUrl}/img-gallery-8.webp`}
                 alt=""
                 className={`inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
@@ -128,7 +129,7 @@ function Gallery() {
             </div>
             <div className="col-span-2 lg:col-span-2 lg:col-start-3 lg:row-start-6 ">
               <img
-                src="img/img-gallery-7.jpg"
+                src={`${imgUrl}/img-gallery-7.webp`}
                 alt=""
                 className={`inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 ${
                   effect
