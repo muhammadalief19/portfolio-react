@@ -2,6 +2,7 @@ import ContactForm from "../components/ContactForm";
 import Header from "../components/Header";
 
 export default function Contact() {
+  const imgUrl = process.env.REACT_APP_URLIMAGE;
   return (
     <>
       <div className="text-slate-200 py-28">
@@ -40,7 +41,7 @@ export default function Contact() {
               <div className="md:col-span-2 flex justify-center">
                 <div className="p-2 bg-gradient-to-br from-teal-500 to-teal-200 rounded-full overflow-hidden animate-left&right-2 shadow-lg shadow-teal-500">
                   <img
-                    src="img/profile.jpg"
+                    src={`${imgUrl}/profile.webp`}
                     alt=""
                     className="aspect-square rounded-full"
                   />
