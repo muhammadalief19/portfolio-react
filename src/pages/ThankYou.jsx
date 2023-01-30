@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function ThankYou() {
   const navigate = useNavigate();
+  const imgUrl = process.env.REACT_APP_URLIMAGE;
   let [number, setNumber] = useState(5);
   setInterval(() => {
     setNumber((number -= 1));
@@ -14,7 +15,7 @@ export default function ThankYou() {
     <>
       <div className="w-full h-screen flex justify-center items-center overflow-hidden text-slate-200">
         <div className="w-4/5 flex flex-col items-center gap-5">
-          <img src="img/illustration-2.png" alt="" className="" />
+          <img src={`${imgUrl}/image-1.png`} alt="" className="" />
           <p className="text-lg font-semibold">
             Terima Kasih Atas Masukkan Anda
           </p>
