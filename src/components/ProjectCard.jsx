@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ProjectCard(props) {
   const [cardActive, seCardActive] = useState(false);
+  const imgUrl = process.env.REACT_APP_URLIMAGE;
 
   function showCard() {
     seCardActive(true);
@@ -12,6 +13,7 @@ export default function ProjectCard(props) {
     seCardActive(false);
     document.body.style.overflow = "auto";
   }
+
   return (
     <>
       <div className="w-full flex flex-col gap-10">
@@ -21,7 +23,7 @@ export default function ProjectCard(props) {
           key={props.idx}
         >
           <img
-            src={`img/${props.img}`}
+            src={`${imgUrl}/${props.img}`}
             alt=""
             className="w-full object-cover aspect-video"
           />
@@ -54,7 +56,7 @@ export default function ProjectCard(props) {
         </span>
         <div className="w-[90%] lg:w-4/5 flex flex-col text-slate-500 gap-5">
           <img
-            src={`img/${props.img}`}
+            src={`${imgUrl}/${props.img}`}
             alt=""
             className="w-[90%] lg:w-[60%] aspect-video mx-auto rounded"
           />
