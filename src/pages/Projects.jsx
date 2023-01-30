@@ -5,9 +5,10 @@ import ProjectCard from "../components/ProjectCard";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const url = process.env.REACT_APP_BASEURL;
   function getData() {
     axios
-      .get("https://data-portfolio.vercel.app")
+      .get(`${process.env.REACT_APP_BASEURL}/projects`)
       .then((res) => {
         setProjects(res.data.projects);
       })
